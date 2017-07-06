@@ -1,0 +1,8 @@
+{
+  "name": "dp-react-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:qingyan1990/dp-react-components.git",
+  "author": "qingyan <liqingyan02@meituan.com>",
+  "license": "MIT"
+}
