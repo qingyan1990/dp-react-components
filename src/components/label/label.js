@@ -23,7 +23,7 @@ class Label extends React.Component {
   }
 
   render() {
-    const { className, children, ...props } = this.props;
+    const { className, children, color, ...props } = this.props;
     const [bsProps, elementProps] = splitBsProps(props);
 
     const classes = {
@@ -33,10 +33,16 @@ class Label extends React.Component {
       hidden: !this.hasContent(children),
     };
 
+    const labelStyle = {
+      backgroundColor: color ? color : null,
+      ...props.style
+    }
+
     return (
       <span
         {...elementProps}
         className={classNames(className, classes)}
+        style={labelStyle}
       >
         {children}
       </span>

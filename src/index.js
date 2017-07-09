@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <Button bsStyle="primary" href="http://www.baidu.com">Hello</Button>
-      <Label bsStyle="primary">hehe</Label>
+      <Label color="#f50">hehe</Label>
     </div>
   )
 }
