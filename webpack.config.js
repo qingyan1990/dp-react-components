@@ -7,7 +7,7 @@ module.exports = {
 
   // 我们应用的入口, 在 `src` 目录 (我们添加到下面的 resolve.modules):
   entry: [
-    'index.tsx'
+    'index.js'
   ],
 
   // 配置 devServer 的输出目录和 publicPath
@@ -36,7 +36,16 @@ module.exports = {
   module: {
     loaders: [
       // .ts(x) 文件应该首先经过 Typescript loader 的处理, 然后是 babel 的处理
-      { test: /\.tsx?$/, loaders: ['babel-loader', 'ts-loader'], include: path.resolve('src') }
+      { test: /\.tsx?$/, loaders: ['babel-loader', 'ts-loader'], include: path.resolve('src') },
+      {
+        test: /\.js$/,
+        include: path.resolve('src'),
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.scss$/,
+        loader: "style-loader!css-loader!sass-loader"
+      }
     ]
   },
 }

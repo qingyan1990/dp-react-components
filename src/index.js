@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Button } from './components';
 
 const App = () => {
   return (
     <div>
-      <p>Hello world!</p>
+      <Button bsStyle="primary">Hello</Button>
     </div>
   )
 }
