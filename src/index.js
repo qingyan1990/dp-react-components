@@ -5,7 +5,7 @@ import { Button } from './components';
 const App = () => {
   return (
     <div>
-      <Button bsStyle="primary">Hello</Button>
+      <Button bsStyle="primary" href="http://www.baidu.com">Hello</Button>
     </div>
   )
 }

@@ -70,6 +70,8 @@ class SafeAnchor extends React.Component {
       props.style = { pointerEvents: 'none', ...props.style };
     }
 
+    props.style = { 'text-decoration': 'none', ...props.style };
+
     return (
       <Component
         {...props}
